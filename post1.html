@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Post Name</title>
+    <meta name="viewport" contents="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="default.css">
+
+
+    <style type="text/css">
+		.img-container{
+			max-width: 600px;
+		}
+
+		img{
+			width: 100%
+		}
+
+	</style>
+</head>
+<body>
+    <div class="nav-wrapper">
+
+		<!-- Link around dots-wrapper added after tutorial video -->
+		<a href="index.html">
+			<div class="dots-wrapper">
+				<div id="dot-1" class="browser-dot"></div>
+				<div id="dot-2" class="browser-dot"></div>
+				<div id="dot-3" class="browser-dot"></div>
+			</div>
+		</a>
+
+		<ul id="navigation">
+			<li><a href="index.html#contact">Contact</a></li>
+
+		</ul>
+	</div>
+
+	<div class="main-container">
+		<br>
+
+		<div class="img-container">
+			<img src="images/mediumlogo.png" height=300px, width=1500px>
+		</div>
+		
+		<h3>My Medium Feed:</h3>
+        
+        <div id="medium-widget"></div>
+        <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
+        <script>MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/@jsteinb","postsPerLine":2,"limit":4,"picture":"big","fields":["description","author","claps","publishAt"],"ratio":"landscape"}})</script>
+    
+        
+		<h5>More articles are uploaded weekly: Contact me if you would like to see an article on something specific!</h5>
+        <iframe src="https://satellitemap.space/" width="800px" height="480px" frameborder="0" title="Starlink Satellite Map"></iframe>
+        
+    </div>
+</body>
+</html>
